@@ -228,3 +228,75 @@ a{ color:inherit; text-decoration:none; }
   transform:translateY(-2px);
   transition:.2s;
 }
+
+/* ===== Quick fix: Force header layout & spacing ===== */
+
+/* safe base resets */
+* { box-sizing: border-box; }
+
+/* ensure containers for header are flex */
+.header-utility .container,
+.header-main .container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+/* make nav horizontal and centered */
+.header-main .nav {
+  display: flex !important;
+  flex: 1 1 auto !important;
+  justify-content: center !important;
+  gap: 35px !important;
+  align-items: center !important;
+  margin: 0 12px !important;
+  white-space: nowrap;
+}
+
+/* make nav links inline and properly padded */
+.header-main .nav a {
+  display: inline-block !important;
+  padding: 8px 6px !important;
+  line-height: 1 !important;
+}
+
+/* brand forced left */
+.header-main .brand {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  margin-right: 12px !important;
+}
+
+/* actions forced right */
+.header-main .actions,
+.header-utility .right {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 12px !important;
+}
+
+/* logo sizing safe-guard */
+.header-main .brand img {
+  height: 32px !important;
+  max-height: 44px;
+  width: auto !important;
+}
+
+/* reduce top bar height if it's pushing content */
+.header-utility { min-height: 44px !important; height: auto !important; padding-top:6px; padding-bottom:6px; }
+
+/* ensure header sits on top of page and looks consistent */
+.header-main { position: sticky !important; top: 0; z-index: 999; background: #fff !important; }
+
+/* small-screen fallback: simple stacked items but controlled spacing */
+@media (max-width: 992px) {
+  .header-main .nav { display: none !important; }
+  .header-utility .container,
+  .header-main .container { padding-left: 16px !important; padding-right: 16px !important; }
+}
+
