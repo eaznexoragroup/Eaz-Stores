@@ -76,3 +76,155 @@ a{ color:inherit; text-decoration:none; }
   .footer__grid{ grid-template-columns:1fr; }
   .btns{ flex-direction:column; }
 }
+
+/* ===== Figma-based Header (NEW COMPLETE HEADER CSS) ===== */
+
+/* MAIN HEADER BLOCK */
+
+:root{
+  --blue: #007BFF;
+  --blue-dark: #0066EE;
+  --wa: #04AF0F;
+  --top-bg: #F8F9FB;
+  --white: #FFFFFF;
+  --ink: #0f1720;
+  --muted: #6B7280;
+  --line: rgba(14,30,37,0.04);
+}
+
+/* Top Bar */
+
+.header-utility {
+  background: var(--top-bg);
+  box-shadow: 0 4px 8.9px rgba(0,0,0,0.09);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.header-utility .container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.header-utility .left {
+  display:flex;
+  gap:18px;
+  font-size:14px;
+  color:var(--muted);
+}
+
+.header-utility .right {
+  display:flex;
+  gap:12px;
+}
+
+/* MAIN NAV BAR */
+
+.header-main {
+  background: var(--white);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.03);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+.header-main .container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding: 0 24px;
+}
+
+/* Logo */
+
+.header-main .brand img {
+  height: 32px;
+  display:block;
+}
+
+/* Navigation */
+
+.header-main .nav {
+  display:flex;
+  gap:35px;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+}
+
+.header-main .nav a {
+  font-size:15px;
+  font-weight:500;
+  color:var(--ink);
+  text-decoration:none;
+  padding:6px 6px;
+  position:relative;
+}
+
+.header-main .nav a:hover {
+  color: var(--blue);
+}
+
+.header-main .nav a::after {
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:0;
+  width:0%;
+  height:3px;
+  background: linear-gradient(90deg, var(--blue), #00C6FF);
+  border-radius:3px;
+  transition: width .25s ease;
+}
+
+.header-main .nav a:hover::after {
+  width:100%;
+}
+
+/* ACTION BUTTONS */
+
+.btn-login {
+  padding:10px 14px;
+  border:1px solid var(--blue);
+  background:transparent;
+  border-radius:5px;
+  color:var(--blue);
+  font-weight:600;
+}
+
+.btn-login:hover { background:#E6F0FF; }
+
+.btn-register {
+  padding:10px 16px;
+  background:var(--blue);
+  color:#fff;
+  border-radius:5px;
+  font-weight:700;
+}
+
+.btn-register:hover { background:var(--blue-dark); }
+
+.btn-chat {
+  padding:10px 18px;
+  background:var(--wa);
+  border-radius:5px;
+  color:white;
+  font-weight:700;
+}
+
+.btn-chat:hover {
+  transform:translateY(-2px);
+  transition:.2s;
+}
