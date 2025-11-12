@@ -18,38 +18,52 @@
 </head>
 <body>
 
-  <!-- Top Utility Bar -->
-  <div class="bar bar--top">
-    <div class="container row">
-      <div class="left">
-        <span>📞 +91 111 222 3330</span>
-        <span>✉️ support@eazstores.com</span>
-      </div>
-      <div class="right">
-        <a href="#">Blog</a>
-        <button class="btn btn--outline">Login</button>
-        <button class="btn btn--primary">Register</button>
-      </div>
+<!-- ===== Header: Top utility + Main nav (Paste/Replace this whole block) ===== -->
+
+<!-- Top utility bar -->
+<div class="header-utility">
+  <div class="container">
+    <div class="left">
+      <span>📞 +91 111 222 3330</span>
+      <span>✉️ support@eazstores.com</span>
+    </div>
+
+    <div class="right">
+      <a href="#">Blog</a>
+      <!-- small language dropdown placeholder -->
+      <a href="#" style="color:var(--muted);">Eng</a>
+      <button class="btn-login">Login</button>
+      <button class="btn-register">Register</button>
     </div>
   </div>
+</div>
 
-  <!-- Main Nav Bar -->
-  <header class="bar bar--main sticky">
-    <div class="container row">
-      <div class="brand">
-        <img src="images/logo.svg" alt="Eaz Stores" />
-      </div>
-      <nav class="nav">
-        <a href="#">Solutions</a>
-        <a href="#">Resources</a>
-        <a href="#">Plans & Pricing</a>
-        <a href="#">Schedule a Meeting</a>
-      </nav>
-      <div class="cta">
-        <a class="btn btn--wa" href="#">Chat With Us!</a>
-      </div>
+<!-- Main header / navigation -->
+<header class="header-main">
+  <div class="container">
+    <!-- Logo -->
+    <div class="brand">
+      <!-- Make sure images/logo.svg exists in your repo -->
+      <img src="images/logo.svg" alt="Eaz Stores" />
     </div>
-  </header>
+
+    <!-- Center navigation -->
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#">Solutions</a>
+      <a href="#">Resources</a>
+      <a href="#">Plans &amp; Pricing</a>
+      <a href="#">Schedule a Meeting</a>
+    </nav>
+
+    <!-- Right action buttons -->
+    <div class="actions">
+      <a class="btn-chat" href="https://wa.me/911112223330" target="_blank" rel="noopener">Chat With Us!</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== End Header ===== -->
+
 
   <!-- Hero -->
   <section class="hero">
@@ -130,3 +144,4 @@
 
 </body>
 </html>
+
