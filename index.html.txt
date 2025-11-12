@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eaz Stores – Modern E-commerce Websites</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Eaz Stores is a modern online store builder by Eaz Nexora—create stunning, high-converting ecommerce websites." />
+  <link rel="icon" href="images/favicon.png" />
+
+  <!-- Open Graph (social preview) -->
+  <meta property="og:title" content="Eaz Stores – Modern E-commerce Websites">
+  <meta property="og:description" content="Affordable, fast and mobile-friendly ecommerce sites.">
+  <meta property="og:image" content="images/og-cover.jpg">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="bar bar--top">
+    <div class="container row">
+      <div class="left">
+        <span>📞 +91 111 222 3330</span>
+        <span>✉️ support@eazstores.com</span>
+      </div>
+      <div class="right">
+        <a href="#">Blog</a>
+        <button class="btn btn--outline">Login</button>
+        <button class="btn btn--primary">Register</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Nav Bar -->
+  <header class="bar bar--main sticky">
+    <div class="container row">
+      <div class="brand">
+        <img src="images/logo.svg" alt="Eaz Stores" />
+      </div>
+      <nav class="nav">
+        <a href="#">Solutions</a>
+        <a href="#">Resources</a>
+        <a href="#">Plans & Pricing</a>
+        <a href="#">Schedule a Meeting</a>
+      </nav>
+      <div class="cta">
+        <a class="btn btn--wa" href="#">Chat With Us!</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <h1>E-Commerce Website for Every Business</h1>
+        <p>Ready to sell online? We make it simple to launch your store and reach customers everywhere.</p>
+        <div class="btns">
+          <a class="btn btn--primary" href="#">Start Your Project</a>
+          <a class="btn btn--outline" href="#">Explore Our Work</a>
+        </div>
+      </div>
+      <img class="hero__img" src="images/hero-phone.png" alt="Store preview" />
+    </div>
+  </section>
+
+  <!-- Closing CTA card -->
+  <section class="closing">
+    <div class="container">
+      <div class="card">
+        <p class="eyebrow">Your business deserves a powerful online store</p>
+        <h2>let’s make it happen today!</h2>
+        <div class="btns">
+          <a class="btn btn--primary" href="#">View Plans & Pricing</a>
+          <a class="btn btn--outline" href="#">Explore Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="images/logo.svg" alt="Eaz Stores" class="footer__logo" />
+        <p class="muted">
+          Eaz Stores is a modern online store builder by Eaz Nexora, helping brands
+          create stunning, high-converting ecommerce websites with ease and flexibility.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">🐱</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="WhatsApp">🟢</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Solutions</h4>
+        <a href="#">Custom Themes</a>
+        <a href="#">Integrations</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Tutorials</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Solutions</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help Centre</a>
+        <a href="#">Contact</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+
+    <div class="copy">
+      © 2025 Eaz Stores. All rights reserved. Powered by Eaz Nexora.
+    </div>
+  </footer>
+
+</body>
+</html>
